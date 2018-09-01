@@ -39,7 +39,7 @@ Second thing is with in the simulator environment, num pad didn't pop up as inte
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Bill Feng]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
