@@ -4,7 +4,7 @@
 
 Submitted by: **Bill Feng**
 
-Time spent: **2** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -17,7 +17,7 @@ The following **optional** features are implemented:
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -33,7 +33,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+A challenge I encountered was I want to have the focus for the app to be on the bill input field. I went through some research and found _becomeFirstResponder()_ will do the trick. 
+
+Second thing is with in the simulator environment, num pad didn't pop up as intented. With further investigation, found need to enable Hardward > Keyboard > Toggle software keyboard.  
 
 ## License
 
