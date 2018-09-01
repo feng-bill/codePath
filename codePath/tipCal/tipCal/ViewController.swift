@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        billField.becomeFirstResponder()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,7 +30,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTap(_ sender: AnyObject) {
+        billField.resignFirstResponder()
         view.endEditing(true)
+        
     }
     
     @IBAction func calculateTip(_ sender: Any) {
@@ -40,6 +46,8 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
     }
+
+    
     
 }
 
